@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+input{
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    align-self: flex-end;
+}
+::placeholder{
+    padding: 10px;
+}
+p{
+    font-size: larger;
+    align-self: center;
+}
+.container{
+    /* margin: auto; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header section */
+#header{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #fcebd8;
+}
+#header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .navbar a{
+    padding: 20px 0 20px 100px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: large;
+    align-items: center;
+}
+
+/* End Header section */
+
+/* Content section */
+#content{
+    margin-top: 40px;
+    padding: 0 100px;
+}
+#content .container .content-top{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#content .container .content-top a{
+    text-decoration: none;
+    color: #0079f9;
+    align-self: center;
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+#content .container .content-bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#content .container .content-bottom .content-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+}
+#content .container .content-bottom .content-item::before{
+    content: "";
+    position: absolute;
+    /* filter: contrast(0); */
+    background-color: rgba(0, 0, 0, 0);
+}
+#content .container .content-bottom .content-item:hover::before{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* filter: contrast(1); */
+}
+#content .container .content-bottom .content-item .content-btn{
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+    display: inline-block;
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #292929;
+    cursor: pointer;
+    transition: .3s ease color, background-color;
+}
+#content .container .content-bottom .content-item .edit{ 
+    left: 10%;    
+    color: white;
+    border: 2px solid white;
+}
+#content .container .content-bottom .content-item .edit:hover{ 
+    color: black;
+    background-color: white;
+}
+#content .container .content-bottom .content-item .rmv{
+    color: crimson;
+    right: 10%;
+    border: 2px solid crimson;
+}
+#content .container .content-bottom .content-item .rmv:hover{
+    color: white;
+    background-color: crimson;
+}
+#content .container .content-bottom .content-item:hover button{
+    opacity: 1;
+}
+#content .container .content-bottom .content-item .content-box {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #cfcfcf;
+    cursor: pointer;
+    transition: .5s ease background-color;
+}
+#content .container .content-bottom .content-item:hover .content-box {
+    background-color: #292929;
+}
+#content .container .content-bottom .content-item .content-title {
+    display: flex;
+    flex-direction: column;
+    
+}
+#content .container .content-bottom .content-item .content-title p{
+    align-self: center;
+    word-break: break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+/*End Content section */
+
+
+/* Create section */
+#create .container{
+    margin-top: 50px;
+    padding-left: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#create .container p{
+    align-self: flex-start;
+} 
+#create .container input{
+    align-self: flex-start;
+    margin: 20px 0;
+} 
+#create .container button{
+    align-self: flex-start;
+    width: 50px;
+    height: 30px;
+    color: white;
+    background-color: #007fff;
+    border: 2px solid #0079f9;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease background-color;
+}
+#create .container button:hover{
+    background-color: #014fc6;
+}
+#create .container .behavior .update-btn{
+    width: 80px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: #03c04a;
+    border: 2px solid #03c04a;
+    transition: .3s ease background-color;
+}
+#create .container .behavior .update-btn:hover{
+    background-color: #03ac13;
+}
+
+#create .container .behavior .cancel-btn{
+    width: 80px;
+    height: 40px;
+    background-color: #909090;
+    border: 2px solid #909090;
+    transition: .3s ease background-color;
+}
+#create .container .behavior .cancel-btn:hover{
+    background-color: #636363;
+}
+/* End Create section

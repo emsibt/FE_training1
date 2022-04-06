@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Edit</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section id="header">
+      <div class="header container">
+        <div class="navbar">
+          <a href="./index.html"><h3>Angular</h3></a>
+        </div>
+      </div>
+    </section>
+    <section id="create">
+      <div class="creat container">
+        <p>Title</p>
+        <input type="text" placeholder="  Edit title here" />
+        <div class="create behavior">
+          <button class="update-btn">Update</button>
+          <button class="cancel-btn" onclick="loadHomePage()">Cancel</button>
+        </div>
+      </div>
+    </section>
+    <script>
+        function loadHomePage(){
+            location.replace("./index.html")
+        }
+    </script>
+  </body>
+</html>
